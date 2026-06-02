@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="[Your site description — replace this in index.html]" />
+  <title>Benji's Designs</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <!-- Animated liquid background blobs -->
+  <div class="liquid-bg" aria-hidden="true">
+    <div class="blob-wrap blob-1-wrap" data-depth-x="0.12" data-depth-y="0.22">
+      <div class="blob-orbit blob-1-orbit">
+        <div class="blob blob-1"></div>
+      </div>
+    </div>
+    <div class="blob-wrap blob-2-wrap" data-depth-x="-0.18" data-depth-y="0.35">
+      <div class="blob-orbit blob-2-orbit">
+        <div class="blob blob-2"></div>
+      </div>
+    </div>
+    <div class="blob-wrap blob-3-wrap" data-depth-x="0.08" data-depth-y="-0.28">
+      <div class="blob-orbit blob-3-orbit">
+        <div class="blob blob-3"></div>
+      </div>
+    </div>
+  </div>
+
+  <header class="site-header glass-panel">
+    <a href="#" class="logo-link" aria-label="Home">
+      <!-- REPLACE: Swap this block with your logo image -->
+      <!-- <img src="images/logo.png" alt="[Your Brand Name]" class="logo-img" /> -->
+<img src="images/logo.png" alt="BENJI'S DESIGNS" class="logo-img" />
+    </a>
+    <nav class="main-nav" aria-label="Main navigation">
+      <a href="#about">About</a>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#services">Services</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-content glass-panel hero-panel">
+        <p class="eyebrow">Pixels with Personality</p>
+        <h1>Where Visual Identity Meets Digital Architecture.</h1>
+        <p class="hero-lead">
+          Elevating your business with custom-crafted graphics and modern, responsive websites that convert.
+        </p>
+        <div class="hero-actions">
+          <a href="#portfolio" class="btn btn-primary">View Portfolio</a>
+          <a href="#contact" class="btn btn-ghost">Get in Touch</a>
+        </div>
+      </div>
+      <div class="hero-visual glass-panel">
+        <!-- REPLACE: Hero image — recommended 1200×900 or larger -->
+        <!-- <img src="images/hero.jpg" alt="[Describe your hero image]" /> -->
+        <img src="images/hero.png" alt="[Describe your hero image]" />
+      </div>
+    </section>
+
+    <section class="section" id="about">
+      <div class="section-header">
+        <h2>About</h2>
+       <!-- <p class="section-sub">[Short section subtitle]</p> -->
+      </div>
+      <div class="about-grid">
+        <div class="about-text glass-panel">
+          <h3>About You</h3>
+          <p>
+            ⇾ You run a small business and want to take it to the next step, but web/graphic design... It's not your thing.
+          </p>
+          <p>
+            ⇾ You try the DIY website builders, but they never turn out how you imagine or look proffesional.
+          </p>
+			<p>
+            ⇾ You need someone who can understand your business, it's values and how you want to present yourself.
+          </p>
+			<p>
+            ⇾ When you need help, you need UK based support, not an AI Chatbot.
+          </p>
+        </div>
+        <div class="about-text glass-panel">
+          <h3>About Us</h3>
+          <p>
+            ⇾ We work closely with small business to help them grow and explore advertising opportunities.
+          </p>
+          <p>
+            ⇾ We are here to take the stress away - Let us know what you want and we will take care of the hard-work.
+          </p>
+			<p>
+            ⇾ Before designing anything, we take time to understand your business and what it means to you and your customers.
+          </p>
+			<p>
+            ⇾ We are UK based - So no language barrier or AI Chatbot hassle. Just human-to-human support and interactions.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="portfolio">
+      <div class="section-header">
+        <h2>Portfolio</h2>
+        <!-- <p class="section-sub">[Portfolio subtitle — e.g. Selected projects &amp; creations]</p> -->
+      </div>
+      <div class="gallery">
+        <!-- Duplicate .gallery-item blocks as needed; update src and alt for each project -->
+        <article class="gallery-item glass-panel">
+          <img src="images/AWT.png" alt="[Project 1 name]" />
+          <div class="gallery-caption">
+            <h3>Brand Refresh</h3>
+            <p>Complete Brand Refresh inc. Updated Business Cards, Flyers and Short Logo Animation</p>
+          </div>
+        </article>
+        <article class="gallery-item glass-panel">
+          <img src="images/DPJ.png" alt="[Project 1 name]" />
+          <div class="gallery-caption">
+            <h3>Logo Update</h3>
+            <p>Took an Old, Dull and Low-Quality Logo and Updated with a Fresh Look and High Quality Image Files.</p>
+          </div>
+        </article>
+        <article class="gallery-item glass-panel">
+          <div class="image-placeholder gallery-ph">
+            <span class="placeholder-label">PROJECT 3</span>
+            <span class="placeholder-hint">images/project-3.jpg</span>
+          </div>
+          <div class="gallery-caption">
+            <h3>New Website</h3>
+            <p>Completely New Website, Coded from Scratch to allow for Complete Customization</p>
+          </div>
+        </article>
+		  <!--
+        <article class="gallery-item glass-panel">
+          <div class="image-placeholder gallery-ph">
+            <span class="placeholder-label">PROJECT 4</span>
+            <span class="placeholder-hint">images/project-4.jpg</span>
+          </div>
+          <div class="gallery-caption">
+            <h3>[Project title]</h3>
+            <p>[Brief project description]</p>
+          </div>
+        </article>
+        <article class="gallery-item glass-panel">
+          <div class="image-placeholder gallery-ph">
+            <span class="placeholder-label">PROJECT 5</span>
+            <span class="placeholder-hint">images/project-5.jpg</span>
+          </div>
+          <div class="gallery-caption">
+            <h3>[Project title]</h3>
+            <p>[Brief project description]</p>
+          </div>
+        </article>
+        <article class="gallery-item glass-panel">
+          <div class="image-placeholder gallery-ph">
+            <span class="placeholder-label">PROJECT 6</span>
+            <span class="placeholder-hint">images/project-6.jpg</span>
+          </div>
+          <div class="gallery-caption">
+            <h3>[Project title]</h3>
+            <p>[Brief project description]</p>
+          </div>
+        </article>
+		-->
+      </div>
+    </section>
+
+    <section class="section" id="services">
+      <div class="section-header">
+        <h2>Services</h2>
+        <p class="section-sub">Unsure if we offer what you are looking for? Contact us and we will see what we can do!</p>
+      </div>
+      <div class="services-grid">
+        <div class="service-card glass-panel">
+          <span class="service-icon" aria-hidden="true">◆</span>
+          <h3>New/Updated Logo</h3>
+          <p>Looking for a <strong>New or Updated Eye-Catching Logo or Logo Animation</strong> to make you Stand Out?</p>
+        </div>
+        <div class="service-card glass-panel">
+          <span class="service-icon" aria-hidden="true">◇</span>
+          <h3>Graphic Design</h3>
+          <p>Looking to bag yourself some <strong>New Business Graphics</strong> to use on Social Media or for Custom Advertising peices?</p>
+        </div>
+        <div class="service-card glass-panel">
+          <span class="service-icon" aria-hidden="true">○</span>
+          <h3>Website Creation</h3>
+          <p>Looking for a <strong>Brand New Website </strong>that is coded from scratch which allows for <strong>compelete</strong> customization rather than these pointless DIY Website Builders?</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact-section" id="contact">
+      <div class="contact-wrap glass-panel">
+        <div class="section-header contact-header">
+          <h2>Contact</h2>
+          <p class="section-sub">Let's Connect - We want to help you grow and present yourself as that vision you have. </p>
+        </div>
+        <div class="contact-details">
+          <p><strong>Email:</strong> <a href="mailto:benjisdesigns@hotmail.com">benjisdesigns@hotmail.com</a></p>
+         <!-- <p><strong>Phone:</strong> <a href="tel:[+1234567890]">[+1 (234) 567-890]</a></p> -->
+          <p><strong>Location:</strong> United Kingdom </p>
+          <!-- Optional social links — remove or uncomment -->
+          <!--
+          <div class="social-links">
+            <a href="[Instagram URL]" target="_blank" rel="noopener noreferrer">Instagram</a>
+            <a href="[Behance URL]" target="_blank" rel="noopener noreferrer">Behance</a>
+            <a href="[LinkedIn URL]" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          </div>
+          -->
+        </div>
+        <form class="contact-form" id="contact-form" action="#" method="post" novalidate>
+          <p class="form-status" id="form-status" role="status" aria-live="polite" hidden></p>
+          <label class="hp-field" aria-hidden="true">
+            <span>Leave blank</span>
+            <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" />
+          </label>
+          <label>
+            <span>Name</span>
+            <input type="text" name="name" placeholder="Your name" autocomplete="name" required />
+          </label>
+          <label>
+            <span>Email</span>
+            <input type="email" name="email" placeholder="you@example.com" autocomplete="email" required />
+          </label>
+          <label>
+            <span>Telephone Number</span>
+            <input type="tel" name="phone" placeholder="e.g. 07123 456789" autocomplete="tel" />
+          </label>
+          <label>
+            <span>Message</span>
+            <textarea name="message" rows="4" placeholder="How can we help?" required></textarea>
+          </label>
+          <button type="submit" class="btn btn-primary" id="form-submit-btn">Send Message</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer glass-panel">
+    <p>&copy; <span id="year"></span> Benji's Designs. All rights reserved.</p>
+    <p class="footer-tag">Pixels with Personality</p>
+  </footer>
+
+  <script src="js/contact-config.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
