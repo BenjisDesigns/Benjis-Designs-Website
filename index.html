@@ -1,14 +1,140 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-GB">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Web/Graphic Design Services" />
-  <title>Benji's Designs</title>
+  <!-- UPDATE siteUrl below when your live domain is set (canonical, Open Graph, JSON-LD, sitemap.xml) -->
+  <script>
+    window.SITE_URL = "https://benjisdesigns.co.uk";
+  </script>
+  <title>Benji's Designs | Website Design, Graphic Design &amp; Brand Growth UK</title>
+  <meta name="description" content="UK web design and graphic design studio for small businesses. Custom websites, logos, branding, marketing graphics and brand growth support — human help, no DIY builders." />
+  <meta name="robots" content="index, follow" />
+  <meta name="author" content="Benji's Designs" />
+  <meta name="geo.region" content="GB" />
+  <meta name="theme-color" content="#7c3aed" />
+  <link rel="canonical" href="https://benjisdesigns.co.uk/" id="canonical-link" />
+  <link rel="icon" href="images/logo.png" type="image/png" />
+  <link rel="apple-touch-icon" href="images/logo.png" />
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="en_GB" />
+  <meta property="og:site_name" content="Benji's Designs" />
+  <meta property="og:title" content="Benji's Designs | Website Design, Graphic Design &amp; Brand Growth UK" />
+  <meta property="og:description" content="UK web design and graphic design studio for small businesses. Custom websites, logos, branding, marketing graphics and brand growth support." />
+  <meta property="og:url" content="https://benjisdesigns.co.uk/" id="og-url" />
+  <meta property="og:image" content="https://benjisdesigns.co.uk/images/hero.png" id="og-image" />
+  <meta property="og:image:alt" content="Benji's Designs — custom website design and graphic design for UK small businesses" />
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Benji's Designs | Website Design, Graphic Design &amp; Brand Growth UK" />
+  <meta name="twitter:description" content="UK web design and graphic design studio for small businesses. Custom websites, logos, branding and marketing graphics." />
+  <meta name="twitter:image" content="https://benjisdesigns.co.uk/images/hero.png" id="twitter-image" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/style.css" />
+  <script type="application/ld+json" id="structured-data">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "Benji's Designs",
+    "description": "UK-based website design, graphic design, branding and brand growth services for small businesses. Custom-coded websites, logos, marketing graphics and advertising support.",
+    "url": "https://benjisdesigns.co.uk/",
+    "image": "https://benjisdesigns.co.uk/images/hero.png",
+    "logo": "https://benjisdesigns.co.uk/images/logo.png",
+    "email": "benjisdesigns@hotmail.com",
+    "areaServed": {
+      "@type": "Country",
+      "name": "United Kingdom"
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "GB"
+    },
+    "slogan": "Pixels with Personality",
+    "knowsAbout": [
+      "Website design",
+      "Website creation",
+      "Graphic design",
+      "Logo design",
+      "Brand identity",
+      "Brand growth",
+      "Marketing graphics",
+      "Small business marketing"
+    ],
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Design and marketing services",
+      "itemListElement": [
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Website Creation",
+            "description": "Custom websites coded from scratch for full control and professional results."
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Graphic Design",
+            "description": "Business graphics for social media, advertising and print."
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Logo Design",
+            "description": "New or refreshed logos and logo animations."
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Brand Growth",
+            "description": "Support to help small businesses grow and strengthen their visual identity."
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Marketing Resources",
+            "description": "Marketing graphics and materials to support advertising and promotion."
+          }
+        }
+      ]
+    }
+  }
+  </script>
+  <script>
+    (function () {
+      var base = (window.SITE_URL || "").replace(/\/$/, "");
+      if (!base) return;
+      var canon = document.getElementById("canonical-link");
+      if (canon) canon.href = base + "/";
+      var ogUrl = document.getElementById("og-url");
+      if (ogUrl) ogUrl.content = base + "/";
+      ["og-image", "twitter-image"].forEach(function (id) {
+        var el = document.getElementById(id);
+        if (el) el.content = base + "/images/hero.png";
+      });
+      var ld = document.getElementById("structured-data");
+      if (ld) {
+        try {
+          var data = JSON.parse(ld.textContent);
+          data.url = base + "/";
+          data.image = base + "/images/hero.png";
+          data.logo = base + "/images/logo.png";
+          ld.textContent = JSON.stringify(data);
+        } catch (err) { /* keep defaults */ }
+      }
+    })();
+  </script>
 </head>
 <body>
   <!-- Animated liquid background blobs -->
@@ -31,10 +157,8 @@
   </div>
 
   <header class="site-header glass-panel">
-    <a href="#" class="logo-link" aria-label="Home">
-      <!-- REPLACE: Swap this block with your logo image -->
-      <!-- <img src="images/logo.png" alt="[Your Brand Name]" class="logo-img" /> -->
-<img src="images/logo.png" alt="BENJI'S DESIGNS" class="logo-img" />
+    <a href="#home" class="logo-link" aria-label="Benji's Designs — Home">
+      <img src="images/logo.png" alt="Benji's Designs — website design and graphic design UK" class="logo-img" width="160" height="40" />
     </a>
     <nav class="main-nav" aria-label="Main navigation">
       <a href="#about">About</a>
@@ -53,7 +177,7 @@
         <p class="eyebrow">Pixels with Personality</p>
         <h1>Where Visual Identity Meets Digital Architecture.</h1>
         <p class="hero-lead">
-          Elevating your business with custom-crafted graphics and modern, responsive websites that convert.
+          UK website design, graphic design and brand growth for small businesses — custom-coded sites, logos, marketing graphics and real human support that helps you <span class="stand-out">Stand Out</span>.
         </p>
         <div class="hero-actions">
           <a href="#portfolio" class="btn btn-primary">View Portfolio</a>
@@ -63,14 +187,14 @@
       <div class="hero-visual glass-panel">
         <!-- REPLACE: Hero image — recommended 1200×900 or larger -->
         <!-- <img src="images/hero.jpg" alt="[Describe your hero image]" /> -->
-        <img src="images/hero.png" alt="[Describe your hero image]" />
+        <img src="images/hero.png" alt="Custom website design and graphic design work by Benji's Designs, UK" fetchpriority="high" />
       </div>
     </section>
 
     <section class="section" id="about">
       <div class="section-header">
-        <h2>About</h2>
-       <!-- <p class="section-sub">[Short section subtitle]</p> -->
+        <h2>About Benji's Designs</h2>
+        <p class="section-sub">Website design, graphic design and brand support for UK small businesses who want professional results without the DIY hassle.</p>
       </div>
       <div class="about-grid">
         <div class="about-text glass-panel">
@@ -109,19 +233,19 @@
     <section class="section" id="portfolio">
       <div class="section-header">
         <h2>Portfolio</h2>
-        <!-- <p class="section-sub">[Portfolio subtitle — e.g. Selected projects &amp; creations]</p> -->
+        <p class="section-sub">Selected website design, logo design and graphic design projects for UK small businesses.</p>
       </div>
       <div class="gallery">
         <!-- Duplicate .gallery-item blocks as needed; update src and alt for each project -->
         <article class="gallery-item glass-panel">
-          <img src="images/AWT.png" alt="[Project 1 name]" />
+          <img src="images/AWT.png" alt="Brand refresh with business cards, flyers and logo animation — Benji's Designs portfolio" loading="lazy" decoding="async" />
           <div class="gallery-caption">
             <h3>Brand Refresh</h3>
             <p>Complete Brand Refresh inc. Updated Business Cards, Flyers and Short Logo Animation</p>
           </div>
         </article>
         <article class="gallery-item glass-panel">
-          <img src="images/DPJ.png" alt="[Project 1 name]" />
+          <img src="images/DPJ.png" alt="Logo redesign and high-quality brand identity files — Benji's Designs portfolio" loading="lazy" decoding="async" />
           <div class="gallery-caption">
             <h3>Logo Update</h3>
             <p>Took an Old, Dull and Low-Quality Logo and Updated with a Fresh Look and High Quality Image Files.</p>
@@ -175,13 +299,13 @@
     <section class="section" id="services">
       <div class="section-header">
         <h2>Services</h2>
-        <p class="section-sub">Unsure if we offer what you are looking for? Contact us and we will see what we can do!</p>
+        <p class="section-sub">Unsure if we offer what you are looking for? Contact us and let's see what we can do!</p>
       </div>
       <div class="services-grid">
         <div class="service-card glass-panel">
           <span class="service-icon" aria-hidden="true">◆</span>
           <h3>New/Updated Logo</h3>
-          <p>Looking for a <strong>New or Updated Eye-Catching Logo or Logo Animation</strong> to make you Stand Out?</p>
+          <p>Looking for a <strong>New or Updated Eye-Catching Logo or Logo Animation</strong> to make you <span class="stand-out">Stand Out</span>?</p>
         </div>
         <div class="service-card glass-panel">
           <span class="service-icon" aria-hidden="true">◇</span>
@@ -193,6 +317,25 @@
           <h3>Website Creation</h3>
           <p>Looking for a <strong>Brand New Website </strong>that is coded from scratch which allows for <strong>compelete</strong> customization rather than these pointless DIY Website Builders?</p>
         </div>
+		  <!--
+        <div class="service-card glass-panel">
+          <span class="service-icon" aria-hidden="true">▣</span>
+          <h3>Brand Growth</h3>
+          <p>Need help strengthening your <strong>brand identity and presence</strong> so your business looks consistent, professional and ready to grow online and offline?</p>
+        </div>
+		  -->
+        <div class="service-card glass-panel">
+          <span class="service-icon" aria-hidden="true">◎</span>
+          <h3>Marketing Resources</h3>
+          <p>Want <strong>marketing graphics and advertising materials</strong> — social posts, flyers, banners and more — designed to support your promotions and reach new customers?</p>
+        </div>
+		  <!--
+        <div class="service-card service-card-wide glass-panel">
+          <span class="service-icon" aria-hidden="true">✦</span>
+          <h3>Custom Applications</h3>
+          <p>I can also create custom web applications. These web applications can be used for all sorts of tasks and are designed to improve efficiency and can be used as a simple browser tab. These custom web apps are designed to transform minute/s long task/s to simple copy and paste's or similar - I am not creating miracles, just ways to make the tasks smoother. <br>What's the difference from the ones already out there? Completely custom tailored for you and <strong>UNLIMITED USE</strong></p>
+        </div>
+		-->
       </div>
     </section>
 
@@ -200,7 +343,8 @@
       <div class="contact-wrap glass-panel">
         <div class="section-header contact-header">
           <h2>Contact</h2>
-          <p class="section-sub">Let's Connect - We want to help you grow and present yourself as that vision you have. </p>
+          <!-- <p class="section-sub">Let's Connect - We want to help you grow and present yourself as that vision you have. </p> -->
+			<p class="section-sub">Let's cut the sh*t. This is my passion. I want to work with you and be your go-to. Even if you don't think I offer what you need, drop me a message using the form so I can understand if I can help you, and where I could possibly expand.</p>
         </div>
         <div class="contact-details">
           <p><strong>Email:</strong> <a href="mailto:benjisdesigns@hotmail.com">benjisdesigns@hotmail.com</a></p>

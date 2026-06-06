@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# Update the Sitemap URL to match your live domain (same as SITE_URL in index.html)
+Sitemap: https://benjisdesigns.co.uk/sitemap.xml
